@@ -1,0 +1,139 @@
+/*start global */
+:root {
+  --maincolor: #bf0101;
+  --secondcolor: #000;
+}
+* {
+  font-family: "El Messiri", sans-serif;
+}
+body {
+  height: 3000px;
+}
+/* end global */
+
+/* start scroll bar */
+html {
+  --scrollbarBG: #cfd8dc;
+  --thumbBG: #90a4ae;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--maincolor);
+  border-radius: 6px;
+  border: 3px solid var(--maincolor);
+}
+
+/* end scroll bar */
+
+/* strat navbar */
+nav {
+  background-color: #fff;
+}
+.navbar-brand img {
+  max-width: 60px;
+}
+
+.navbar-nav .nav-link {
+  color: #000 !important;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--maincolor) !important;
+  font-size: 18.5px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  margin-top: 0;
+  box-shadow: 0 0 10px 3px rgb(0 0 0 / 5%);
+  padding: 17px 0;
+  border-top: 3px solid var(--maincolor);
+}
+.dropdown-menu .dropdown-item {
+  color: var(--secondcolor) !important;
+  font-size: 17px;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+.dropdown-menu .dropdown-item:hover {
+  color: var(--maincolor) !important;
+  letter-spacing: 0.4px;
+}
+
+.nav-icons {
+  padding: 0 20px;
+}
+.nav-icons i {
+  margin-top: -5px;
+  font-size: 24px;
+  margin-left: 15px;
+  color: var(--secondcolor);
+  transition: all 0.1s ease-in-out;
+}
+.nav-icons i:hover {
+  color: var(--maincolor);
+  font-size: 24.4px;
+}
+.search-bar {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+}
+.search-bar input {
+  background-color: #fff;
+  color: var(--secondcolor);
+  outline: var(--maincolor);
+}
+.search-bar input:focus {
+  border-color: var(--maincolor);
+  box-shadow: 0 0 0 0.25rem rgb(191 1 1 / 25%);
+  outline: var(--maincolor);
+}
+.search-bar button {
+  border-color: var(--maincolor);
+  color: var(--maincolor);
+}
+.search-bar button:hover {
+  background-color: var(--maincolor);
+  color: #fff;
+  border-color: var(--maincolor);
+}
+@media (min-width: 676px) {
+  .search-bar button {
+    width: 10%;
+  }
+}
+/* end navbar */
+
+/* mobile nav */
+.mobile-nav-icons {
+  position: fixed;
+  right: auto;
+  left: auto;
+  bottom: 30px;
+  width: 100%;
+}
+.mobile-nav-icons i {
+  color: var(--secondcolor);
+  font-size: 28px;
+  margin: 0 25px;
+}
+.mobile-nav-icons i:hover {
+  color: var(--maincolor);
+  font-size: 29px;
+}
+/* start mobile nav */
