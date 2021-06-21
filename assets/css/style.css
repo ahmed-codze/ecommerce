@@ -37,6 +37,7 @@ body::-webkit-scrollbar-thumb {
 /* strat navbar */
 nav {
   background-color: #fff;
+  box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
 }
 .navbar-brand img {
   max-width: 60px;
@@ -48,7 +49,8 @@ nav {
   font-size: 18px;
   transition: all 0.3s ease-in-out;
 }
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
   color: var(--maincolor) !important;
   font-size: 18.5px;
 }
@@ -86,12 +88,38 @@ nav {
   color: var(--maincolor);
   font-size: 24.4px;
 }
+.cart-link {
+  position: relative;
+  text-decoration: none;
+}
+.cart-link span {
+  color: #fff;
+  background-color: var(--maincolor);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  left: 40px;
+  bottom: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.cart-link i:hover + span {
+  bottom: 20px;
+}
+.search-icon {
+  cursor: pointer;
+}
 .search-bar {
   position: fixed;
   top: 70px;
   width: 100%;
   padding: 5px;
   display: flex;
+  z-index: 9999;
 }
 .search-bar input {
   background-color: #fff;
@@ -132,8 +160,68 @@ nav {
   font-size: 28px;
   margin: 0 25px;
 }
-.mobile-nav-icons i:hover {
+
+.mobile-nav-icons i:hover,
+.mobile-nav-icons .active {
   color: var(--maincolor);
   font-size: 29px;
 }
-/* start mobile nav */
+.mobile-cart-link {
+  position: relative;
+  text-decoration: none;
+}
+.mobile-cart-link span {
+  color: #fff;
+  background-color: var(--maincolor);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  left: 48px;
+  bottom: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-cart-link i:hover + span {
+  bottom: 20px;
+}
+/* end mobile nav */
+
+/* start main carousel */
+.main-carousel h1 {
+  color: var(--secondcolor);
+  font-weight: bold;
+}
+.main-carousel p {
+  color: rgb(44, 44, 44);
+}
+.main-carousel .btn {
+  background-color: var(--secondcolor);
+  border-radius: unset;
+  transition: all 0.5s ease-in-out;
+}
+.main-carousel .btn:hover {
+  background-color: #fff;
+  color: var(--secondcolor);
+}
+
+/* end main carousel */
+
+/* start catagories */
+.catagories {
+  padding: 10px;
+  margin-top: 20px;
+}
+.catagories img {
+  height: 450px;
+  width: 100%;
+}
+@media (max-width: 300px) {
+  .catagories img {
+    height: 300px;
+  }
+}
+/* start catagories */
