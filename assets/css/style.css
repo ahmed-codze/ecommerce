@@ -45,6 +45,9 @@ nav {
   background-color: #fff;
   box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
 }
+.fixed-nav {
+  display: none;
+}
 .navbar-brand img {
   max-width: 60px;
 }
@@ -161,6 +164,7 @@ nav {
   left: auto;
   bottom: 30px;
   width: 100%;
+  z-index: 99999999;
 }
 .mobile-nav-icons i {
   color: var(--secondcolor);
@@ -265,6 +269,9 @@ nav {
   right: 0;
   text-align: center;
   transition: all 0.5s ease-in-out;
+}
+.catagories .cat-box .cta:hover {
+  letter-spacing: 0.4px;
 }
 .catagories .cat-box:hover > span {
   bottom: 70px;

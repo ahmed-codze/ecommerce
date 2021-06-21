@@ -17,7 +17,7 @@
 <body dir="rtl">
     <!-- start navbar -->
 
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light relative-nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
               <img src="assets/img/logo.png" alt="barnd logo" class="img-fluid"/> 
@@ -60,6 +60,55 @@
           </div>
         </div>
       </nav>
+
+      <!-- fixed navbar  -->
+
+      <nav class="navbar navbar-expand-md fixed-top fixed-nav navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="assets/img/logo.png" alt="barnd logo" class="img-fluid"/> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav  mb-2 mb-md-0">
+              <li class="nav-item active">
+                <a class="nav-link active" title="الصفحة الرئيسية" aria-current="page" href="#">الرئيسية</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" title="الأقسام" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">الأقسام</a>
+                <ul class="dropdown-menu text-center" aria-labelledby="dropdown01">
+                  <li><a class="dropdown-item" title="قسم الرجالي" href="#">رجالي</a></li>
+                  <li><a class="dropdown-item" title="قسم الحريمي" href="#">حريمي</a></li>
+                  <li><a class="dropdown-item" title="قسم الأطفال" href="#">اطفال</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" title="المدونة" href="#">المدونة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" title="الأسئلة الشائعة" href="#">الأسئلة الشائعة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" title="تواصل معنا" href="#" >توصل معنا</a>
+              </li>
+            </ul>
+
+            <div class="d-flex me-auto nav-icons d-none d-md-block">
+                <a href="#" class="cart-link" title="السلة">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>1</span>
+                </a>
+                <a href="#"  title="الأمنيات"><i class="fas fa-heart"></i></a>
+                <a class="search-icon" title="بحث"> <i class="fas fa-search"></i> </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- end fixed navbar -->
+
       <!-- start search bar -->
       <form class=" me-auto search-bar">
         <input class="form-control me-2" type="search" placeholder="ابحث عن منتج" aria-label="Search">
@@ -149,12 +198,12 @@
       <a href="#" title="تسوق قسم الرجالي" class="cta">تسوق الان</a>
     </div>
     <div class="col-12 col-sm-6 col-lg-4 cat-box">
-      <img src="assets/img/catagories/ملابس حريمي.jpg" class="img-fluid" alt="قسم الحريمي">
+      <a class="cat-img" href="#"><img src="assets/img/catagories/ملابس حريمي.jpg" class="img-fluid" alt="قسم الحريمي"></a>
       <span class="cat-name">ملابس حريمي</span>
       <a href="#" title="تسوق قسم الحريمي" class="cta">تسوق الان</a>
     </div>
     <div class="col-12 col-sm-6 col-lg-4 cat-box">
-      <img src="assets/img/catagories/ملابس اطفال.jpg" class="img-fluid" alt="قسم الأطفال">
+      <a class="cat-img" href="#"><img src="assets/img/catagories/ملابس اطفال.jpg" class="img-fluid" alt="قسم الأطفال"></a>
       <span class="cat-name">ملابس اطفال</span>
       <a href="#" title="تسوق قسم الاطفال" class="cta">تسوق الان</a>
     </div>

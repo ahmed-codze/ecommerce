@@ -20,10 +20,9 @@ $(document).ready(function(){
 
     $(window).scroll(function () {
         if($(window).scrollTop() > 300) {
-            $('nav').addClass('fixed-top')
-            $('nav').slideDown('slow');
+            $('.fixed-nav').slideDown('slow')
         } else {
-            $('nav').removeClass('fixed-top')
+            $('.fixed-nav').slideUp()
         }
     })
 
