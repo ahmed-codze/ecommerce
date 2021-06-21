@@ -11,6 +11,7 @@
     <title>ecomerce name</title>
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="assets/vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="assets/vendor/wow/css/animate.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet"/>
 </head>
 <body dir="rtl">
@@ -103,12 +104,12 @@
       <img src="assets/img/slider/01.jpg" alt="الصورة الرئيسية" width="100%" height="100%" />
       <div class="container">
         <div class="carousel-caption text-end">
-          <h1>أحدث التصاميم</h1>
-          <p>
+          <h1 class="wow bounceIn" data-wow-duration="1.5s">أحدث التصاميم</h1>
+          <p class="wow bounceInUp" data-wow-duration="1.5s">
             وريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
             أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستري          
           </p>
-          <p><a class="btn btn-lg btn-dark" title="تسوق منتجات موقع كذا" href="#الأقسام" role="button">تسوق الان</a></p>
+          <p class="wow bounceInUp" data-wow-duration="1.5s"><a class="btn btn-lg btn-dark" title="تسوق منتجات موقع كذا" href="#الأقسام" role="button">تسوق الان</a></p>
         </div>
       </div>
     </div>
@@ -117,12 +118,12 @@
 
       <div class="container">
         <div class="carousel-caption text-end">
-          <h1>أفضل الأسعار</h1>
-          <p>
+          <h1 class="wow bounceIn" data-wow-duration="1.5s">أفضل الأسعار</h1>
+          <p class="wow bounceInUp" data-wow-duration="1.5s">
             وريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
             أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستري          
           </p>          
-          <p><a class="btn btn-lg btn-dark" href="#الأقسام" title="تسوق منتجات موقع كذا" role="button">تسوق الان</a></p>
+          <p class="wow bounceInUp" data-wow-duration="1.5s"><a class="btn btn-lg btn-dark" href="#الأقسام" title="تسوق منتجات موقع كذا" role="button">تسوق الان</a></p>
         </div>
       </div>
     </div>
@@ -162,8 +163,22 @@
 </section>
 
 <!-- end catagories -->
+
+<!-- start features -->
+<section class="features bg-light" id="المميزات">
+  <div class="row">
+    <div class="col-6 col-md-3 feature-box">
+
+    </div>
+  </div>
+</section>
+<!-- end features -->
 <script src="assets/js/jquery-3.2.1.min.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/vendor/wow/js/wow.min.js"></script>
+<script>
+  new WOW().init();
+  </script>
 </body>
 </html>
