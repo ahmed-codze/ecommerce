@@ -33,5 +33,27 @@ $(document).ready(function(){
     } else {
         $('.main-carousel .carousel-inner img').height( ( $(window).height() - $('nav').height() ) / 1.5);
     }
+
+    // catagories 
+
+    // $('.cat-box').mouseenter(function () {
+    //     $(this).children('.cat-name').animate({
+    //         bottom: 70,
+    //     }, 600)
+    //     $(this).children('.cta').show().animate({
+    //         bottom: 30,
+    //     }, 700)
+    // })
+    // $('.cat-box').mouseleave(function () {
+    //     $(this).children('.cat-name').animate({
+    //         bottom: 30,
+    //     }, 600)
+    //     $(this).children('.cta').show().animate({
+    //         bottom: -30,
+    //     }, 600, function () {
+    //         $(this).hide()
+    //     } )
+
+    // })
 }); 
 
