@@ -162,9 +162,12 @@ nav {
   position: fixed;
   right: auto;
   left: auto;
-  bottom: 30px;
+  bottom: 0px;
   width: 100%;
   z-index: 99999999;
+  background-color: #fff;
+  box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+  padding: 7px;
 }
 .mobile-nav-icons i {
   color: var(--secondcolor);
