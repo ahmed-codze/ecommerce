@@ -12,7 +12,12 @@
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="assets/vendor/fontawesome/css/all.min.css" rel="stylesheet" />
     <link href="assets/vendor/wow/css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="assets/css/style.css" rel="stylesheet"/>
+
+
+
 </head>
 <body dir="rtl">
     <!-- start navbar -->
@@ -216,18 +221,87 @@
 <!-- start features -->
 <section class="features bg-light" id="المميزات">
   <div class="row">
-    <div class="col-6 col-md-3 feature-box">
-
+    <div class="col-12 col-sm-6 col-md-3 feature-box text-center wow bounceIn" >
+      <i class="fas fa-truck"></i>
+      <p class="lead">توصيل حتى باب منزلك </p>
+      <p class="feature-details">  توصيل سريع وحتى باب منزلك واذا اشتريت قطعتين تحصل على توصيل مجاني</p>
     </div>
+
+    <div class="col-12 col-sm-6 col-md-3 feature-box text-center wow bounceIn" data-wow-delay="0.2s">
+      <i class="fas fa-undo"></i>
+      <p class="lead">امكانية الارجاع</p>
+      <p class="feature-details">لأننا متأكدين من جودة خاماتنا يمكنك الارجاع اذا لم تعجبك الخامة او لاي سبب اخر ولن تدفع مصاريف اضافية</p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-3 feature-box text-center wow bounceIn" data-wow-delay="0.4s">
+      <i class="fas fa-pump-medical"></i>
+      <p class="lead">مراعاة النظافة</p>
+      <p class="feature-details"> نراعي نظافة وتطهير المنتج من المصنع حتى التوصيل حسب المعايير الصحية حتى تستلمه وانت مطمئن</p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-3 feature-box text-center wow bounceIn" data-wow-delay="0.6s">
+      <i class="fas fa-tshirt"></i>
+      <p class="lead">المقاس المناسب</p>
+      <p class="feature-details">نقوم بتوصيل المنتج بأكثر من مقاس تحسباً اذا كان غير مناسب فيمكنك تغيير المقاس في وقتها</p>
+    </div>
+
   </div>
 </section>
 <!-- end features -->
+
+<!-- start products slider -->
+
+<!-- Slider main container -->
+<section class="trending">
+  <h3> الأكثر مبيعا هذا الشهر </h3>
+<div class="container">
+<div class="swiper-container mySwiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="assets/img/products/01.jpg" width="100%" height="100%" />
+      <div class="product-details">
+        ddd
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <img src="assets/img/products/02.jpg" width="100%" height="100%" />
+    </div>
+
+    <div class="swiper-slide">
+      <img src="assets/img/products/03.jpg" width="100%" height="100%" />
+    </div>
+
+    <div class="swiper-slide">
+      <img src="assets/img/products/04.jpg" width="100%" height="100%" />
+    </div>
+
+    <div class="swiper-slide">
+      <img src="assets/img/products/05.jpg" width="100%" height="100%" />
+    </div>
+
+    <div class="swiper-slide">
+      <img src="assets/img/products/06.jpg" width="100%" height="100%" />
+    </div>
+
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+</div>
+</section>
+
+<!-- end products slider -->
 <script src="assets/js/jquery-3.2.1.min.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/wow/js/wow.min.js"></script>
 <script>
   new WOW().init();
   </script>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>

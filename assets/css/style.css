@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 body {
-  height: 3000px;
+  height: 4000px;
   position: relative;
 }
 /* end global */
@@ -286,5 +286,74 @@ nav {
 /* start features */
 .features {
   padding: 20px;
+  margin-top: 20px;
+}
+.features .feature-box {
+  margin: 20px auto;
+}
+.features i {
+  font-size: 45px;
+  margin-bottom: 12px;
+}
+
+.features .feature-details {
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: -4px;
 }
 /* end features */
+
+/* start trending */
+.trending {
+  padding: 20px;
+  margin-top: 30px;
+}
+.trending h3 {
+  margin: 10px 20px 20px;
+  font-size: 30px;
+}
+.trending h3::after {
+  content: "";
+  width: 260px;
+  height: 2px;
+  background-color: var(--maincolor);
+  display: block;
+}
+@media (max-width: 360px) {
+  .trending h3 {
+    font-size: 22px;
+  }
+  .trending h3::after {
+    width: 200px;
+  }
+}
+.trending .swiper-container {
+  height: 400px;
+  cursor: grab;
+}
+@media (max-width: 480px) {
+  .trending {
+    padding: 10px;
+  }
+  .trending .swiper-container {
+    height: 350px;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--maincolor);
+}
+.swiper-slide {
+  position: relative;
+}
+.swiper-slide .product-details {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 45px;
+  background-color: #fff;
+}
+/* end trending */
