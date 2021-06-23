@@ -346,6 +346,7 @@ nav {
 .swiper-slide {
   position: relative;
 }
+
 .swiper-slide .product-details {
   position: absolute;
   margin-left: auto;
@@ -355,5 +356,35 @@ nav {
   text-align: center;
   bottom: 45px;
   background-color: #fff;
+  cursor: pointer;
+  width: 80%;
+  display: none;
 }
+@media (max-width: 300px) {
+  .swiper-slide .product-details {
+    width: 90%;
+  }
+}
+.swiper-slide:hover > .product-details {
+  display: flex;
+}
+.swiper-slide > img {
+  transition: all 0.5s ease-in-out;
+}
+.swiper-slide:hover > img {
+  transform: scale(1.03, 1.03);
+}
+.swiper-slide .product-details i {
+  font-size: 30px;
+  padding: 10px;
+  color: var(--secondcolor);
+}
+.swiper-slide .product-details > div:hover {
+  color: #fff;
+  background-color: var(--maincolor);
+}
+.swiper-slide .product-details > div:hover i {
+  color: #fff;
+}
+
 /* end trending */
