@@ -1,0 +1,90 @@
+/* signin */
+
+h1 {
+    text-transform: none;
+}
+
+.form-signin {
+    padding: 20px;
+    display: none;
+  }
+  .form-signin input,
+  .form-signin button {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  @media (max-width: 500px) {
+    .form-signin input,
+    .form-signin button {
+      width: 100%;
+    }
+  }
+
+  .form-signin .signup-convert {
+    color: var(--maincolor);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .form-signin .password-container {
+    position: relative;
+  }
+  .form-signin .password-container i {
+    position: absolute;
+    right: 12%;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  @media (max-width: 500px) {
+    .form-signin .password-container i {
+        right: 10px;
+    }
+  }
+  /* end signin */
+  
+  /* start signup */
+  .form-signup {
+    padding: 20px;
+  }
+  .form-signup input,
+  .form-signup button {
+    width: 80%;
+    margin: 20px auto;
+  }
+  @media (max-width: 500px) {
+    .form-signup input,
+    .form-signup button {
+      width: 100%;
+    }
+  }
+  
+  .form-signup button,
+  .form-signin button {
+    width: 150px;
+    text-align: center;
+  }
+
+  .form-signup .signin-convert {
+    color: var(--maincolor);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .form-signup .password-container {
+    position: relative;
+  }
+  .form-signup .password-container i {
+    position: absolute;
+    right: 12%;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  @media (max-width: 500px) {
+    .form-signup .password-container i {
+        right: 10px;
+    }
+  }
+  
+  /* end signup */
+  
